@@ -23,20 +23,32 @@ const CarouselDos = (props) => {
     }
     return (
         <div className='main-carousel'>
+            {props.arrows==='true'? 
             <div className='leftArrow' onClick={() =>{changeImg('prev')}}>&#10092;</div>
-            <div className="carousel" style={{width: `${props.imgSize}px`}}>
-                <div className="carousel-images">
+            : <></> }
+            
+            <div className="container-carousel" style={{width: `${props.imgSize}px`}}>
+                <div className="carousel">
                 {(props.data).map((item, index) => (
-                    <img 
-                    key={index} 
-                    src={item.imgData} 
-                    alt={`Slide ${index}`} 
-                    width= {props.imgSize} 
-                    className={index === currentIndex ? 'active' : 'disable'}/>
+                    <>
+                        <img 
+                        key={index} 
+                        src={item.imgData} 
+                        alt={`Slide ${index}`} 
+                        width= {props.imgSize} 
+                        className={index === currentIndex ? 'active' : 'disable'}/>
+                        
+                        {item.title? <p className={index === currentIndex ? 'active' : 'disable'} >
+                            {item.title}</p>: <></> }
+                        {item.text? <p className={index === currentIndex ? 'active' : 'disable'} >
+                            {item.text}</p>: <></> }
+                    </>
                 ))}
                 </div>
             </div>
+            {props.arrows==='true'? 
             <div className='rightArrow' onClick={() =>{changeImg('next')}}>&#10093;</div>
+            : <></> }
         </div>
     );
 };
