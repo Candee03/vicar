@@ -1,0 +1,35 @@
+.main-carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .leftArrow {
+        position: relative;
+        right: 30px;
+        font-size: 50px;
+        font-weight: 700;
+        z-index: 1;
+        cursor: pointer;
+        color: black;
+    }
+    .rightArrow {
+        position: relative;
+        left: 30px;
+        font-size: 50px;
+        font-weight: 700;
+        z-index: 1;
+        cursor: pointer;
+        color: black;
+    }
+    .carousel {
+        position: relative;
+        overflow: hidden;
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            img {
+                display: block;
+            }
+        }
+    }
+}
