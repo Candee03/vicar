@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import {useSwipeable} from 'react-swipeable'
 import './slide.scss'
 
-const Slide = ({ images, slideNum, imgSize }) => {
+const Slide = ({ images, slideNum, imgSize, speedSlide }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [slideOffset, setSlideOffset] = useState(2); // Número de imágenes a desplazarse
+    const [slideOffset, setSlideOffset] = useState(speedSlide); // Número de imágenes a desplazarse
 
     const handleSwipedLeft = () => {
         setCurrentIndex((prevIndex) => Math.min(prevIndex + slideOffset, slideNum ));
