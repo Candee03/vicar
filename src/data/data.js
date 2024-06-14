@@ -18,3 +18,11 @@ export const data = [
         text: 'texto de prueba'
     }
 ]
+export const images = [
+    'https://st2.depositphotos.com/1000686/8892/i/450/depositphotos_88920606-stock-photo-three-white-labrador-puppy-in.jpg',
+    'https://st2.depositphotos.com/1000686/8892/i/450/depositphotos_88920606-stock-photo-three-white-labrador-puppy-in.jpg',
+    'https://st2.depositphotos.com/1000686/8892/i/450/depositphotos_88920606-stock-photo-three-white-labrador-puppy-in.jpg',
+    'https://st2.depositphotos.com/1000686/8892/i/450/depositphotos_88920606-stock-photo-three-white-labrador-puppy-in.jpg',
+    'https://st2.depositphotos.com/1000686/8892/i/450/depositphotos_88920606-stock-photo-three-white-labrador-puppy-in.jpg',
+    'https://st2.depositphotos.com/1000686/8892/i/450/depositphotos_88920606-stock-photo-three-white-labrador-puppy-in.jpg',
+]
