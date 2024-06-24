@@ -4,14 +4,13 @@ import './slide.scss'
 
 const Slide = ({ images, slideNum, imgSize, speedSlide }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [slideOffset, setSlideOffset] = useState(speedSlide); // Número de imágenes a desplazarse
 
     const handleSwipedLeft = () => {
-        setCurrentIndex((prevIndex) => Math.min(prevIndex + slideOffset, slideNum ));
+        setCurrentIndex((prevIndex) => Math.min(prevIndex + speedSlide, slideNum ));
     };
 
     const handleSwipedRight = () => {
-        setCurrentIndex((prevIndex) => Math.max(prevIndex - slideOffset, 0));
+        setCurrentIndex((prevIndex) => Math.max(prevIndex - speedSlide, 0));
     };
 
     const handlers = useSwipeable({
@@ -21,7 +20,7 @@ const Slide = ({ images, slideNum, imgSize, speedSlide }) => {
         trackMouse: true,
     });
     
-    const slidePercentage = (100 / images.length) * slideOffset;
+    const slidePercentage = (100 / images.length) * speedSlide;
 
     return (
         <div {...handlers} className="carousel">
