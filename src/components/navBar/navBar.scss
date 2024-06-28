@@ -1,0 +1,38 @@
+header {
+    .nav {
+        display: flex;
+        justify-content: end;
+        background-color: red;
+        .btn-nav {
+            padding: 0 10px;
+            color: white;
+            background-color: transparent;
+            border: none;
+            font-size: 30px;
+        }
+    }
+}
+.ul-nav-bar {
+    opacity: 1;
+    transition: opacity 0.3s linear;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.651);
+    list-style: none;
+    .li-nav-bar {
+        padding: 10px 0;
+        color: white;
+        cursor: pointer;
+    }
+}
+.disable {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}

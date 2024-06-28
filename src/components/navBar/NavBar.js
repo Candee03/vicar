@@ -1,27 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './navBar.scss'
 import { Link } from 'react-scroll';
 
-const Navbar = () => {
+const Navbar = ({navList}) => {
+    const [deployed, setDeployed] = useState(false)
+
+    const clickNav = () => {
+        if (deployed) {
+            setDeployed(false)
+        } else {
+            setDeployed(true)
+        }
+    }
+    
     return (
-        <nav>
-            <ul>
-                <li>
-                    <Link to="section1" smooth={true} duration={500}>
-                        Quienes Somos
-                    </Link>
-                </li>
-                <li>
-                    <Link to="section2" smooth={true} duration={500}>
-                        Servicios
-                    </Link>
-                </li>
-                <li>
-                    <Link to="section3" smooth={true} duration={500}>
-                        Clientes
-                    </Link>
-                </li>
-            </ul>
-        </nav>
+        <header>
+            <nav className='nav'>
+                <button onClick={() => clickNav()} className='btn-nav'>&#8801;</button>
+            </nav>
+                <ul className={deployed?'ul-nav-bar': 'disable'}>
+                    {deployed?
+                        <>
+                        {navList.map((li, index) => {
+                            return (
+                                <li className='li-nav-bar'>
+                                    <Link onClick={() => clickNav()} to={'section'+ (parseInt(index)+1)} smooth={true} duration={500}>
+                                        {li} 
+                                    </Link>
+                                </li>
+                            )
+                        })}
+                        </>
+                        :
+                        <></>
+                    }
+                </ul>
+        </header>
     );
 }
 
