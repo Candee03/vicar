@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+
+
+.footer {
+    .container-logo-footer {
+        display: flex;
+        justify-content: center;
+        background-color: $red;
+    }
+    .container-contact-footer {
+        background-color: $dark-white;
+    }
+    .container-credits-footer {
+        background-color: $dark-gray;
+        .p-credits {
+            padding: 0.5rem 0;
+            font-style: italic;
+            font-size: 14px;
+            text-align: center;
+            line-height: 24px;
+            color: $red;
+            .a-credits {
+                color: $red;
+                text-decoration: none;
+            }
+        }
+    }
+}

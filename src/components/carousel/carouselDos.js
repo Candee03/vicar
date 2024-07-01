@@ -1,6 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import './carouselDos.scss'
 
+
+/**
+ * 
+ * @param {} props imgSize number
+ * @param {} props timeOut number
+ * @param {} props data array
+ * @param {} props arrows boolean
+ * @returns 
+ */
 const CarouselDos = (props) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -27,7 +36,7 @@ const CarouselDos = (props) => {
             <div className='leftArrow' onClick={() =>{changeImg('prev')}}>&#10092;</div>
             : <></> }
             
-            <div className="container-carousel" style={{width: `${props.imgSize}px`}}>
+            <div className="container-carousel">
                 <div className="carousel">
                 {(props.data).map((item, index) => (
                     <>
@@ -38,9 +47,9 @@ const CarouselDos = (props) => {
                         width= {props.imgSize} 
                         className={index === currentIndex ? 'active' : 'disable'}/>
                         
-                        {item.title? <p className={index === currentIndex ? 'active' : 'disable'} >
+                        {item.title? <p className={index === currentIndex ? 'active title-carousel' : 'disable'} >
                             {item.title}</p>: <></> }
-                        {item.text? <p className={index === currentIndex ? 'active' : 'disable'} >
+                        {item.text? <p className={index === currentIndex ? 'active text-carousel' : 'disable'} >
                             {item.text}</p>: <></> }
                     </>
                 ))}
