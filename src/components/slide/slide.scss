@@ -1,12 +1,14 @@
-.carousel {
+.slide {
+    margin: 0.5rem 0;
     position: relative;
     overflow: hidden;
     user-select: none;
-    .carousel-images {
+    .slide-images {
         display: flex;
         align-items: center;
-        transition: transform 0.5s ease-in-out;
+        transition: transform 0.7s ease-in-out;
         img {
+            margin-right: 1.5rem;
             display: block;
             pointer-events: none;
         }

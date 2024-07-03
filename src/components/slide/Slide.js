@@ -23,9 +23,9 @@ const Slide = ({ images, slideNum, imgSize, speedSlide }) => {
     const slidePercentage = (100 / images.length) * speedSlide;
 
     return (
-        <div {...handlers} className="carousel">
+        <div {...handlers} className="slide">
             <div
-                className="carousel-images"
+                className="slide-images"
                 style={{ transform: `translateX(${-currentIndex * slidePercentage}%)` }}
             >
                 {images.map((image, index) => (
