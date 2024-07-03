@@ -1,13 +1,13 @@
 import React from 'react'
 //provider
-import { data } from '../../data/data'
+import {homeBanner} from '../../data/data.js'
 //component
-import CarouselDos from '../../components/carousel/carouselDos'
+import Carousel from '../../components/carousel/Carousel.js'
 
 const Home = () => {
     return (
         <>
-            <CarouselDos imgSize='200' timeOut='5000' data={data} arrows={'false'}/>
+            <Carousel timeOut='4000' data={homeBanner} arrows={'false'}/>
         </>
     )
 }
