@@ -1,20 +1,49 @@
 @import '../../styles/variables.scss';
 
 
-.div-container-div {
+.div-container-div-NS {
     margin: 1.5rem 0;
     display: flex;
     justify-content: center;
-    .container-btn {
+    .container-btn-NS {
+        cursor: pointer;
         border-radius: 12px;
         width: 12rem;
         background-color: $red;
         padding: 0.7rem 1.3rem;
-        .text-btn {
+        .text-btn-NS {
             text-align: center;
             color: $white;
             font-weight: 700;
             font-size: 20px;
+        }
+    }
+}
+.div-container-div-home {
+    display: flex;
+    .container-btn-home {
+        cursor: pointer;
+        border-radius: 12px;
+        padding: 0.6rem 1.2rem;
+        background-color: $transparent-white;
+        .text-btn-home {
+            text-align: center;
+            color: $white;
+            font-weight: 700;
+            font-size: 16px;
+        }
+    } 
+    
+}
+
+@media screen and (min-width: 1000px) {
+    .container-btn-NS:hover {
+        background-color: $dark-red;
+    }
+    .container-btn-home:hover {
+        background-color: $white;
+        .text-btn-home {
+            color: $black;
         }
     }
 }
