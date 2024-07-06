@@ -2,13 +2,42 @@
 
 
 .footer {
+    background-color: $dark-white;
     .container-logo-footer {
         display: flex;
         justify-content: center;
-        background-color: $red;
     }
     .container-contact-footer {
-        background-color: $dark-white;
+        margin: 1.5rem;
+        height: 26rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        .social-media-logos {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            .img-social-media {
+                width: 2rem;
+            }
+        }
+        .contact-data {
+            .p-bold-contact-data{
+                font-weight: 700;
+                @extend .p-contact-data;
+            }
+            .p-contact-data {
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.4px;
+            }
+            .p-politica-de-privacidad {
+                @extend .p-contact-data;
+                font-weight: 700;
+                text-decoration: underline;
+            }
+        }
     }
     .container-credits-footer {
         background-color: $dark-gray;
@@ -18,6 +47,7 @@
             font-size: 14px;
             text-align: center;
             line-height: 24px;
+            letter-spacing: 0.4px;
             color: $red;
             .a-credits {
                 color: $red;
