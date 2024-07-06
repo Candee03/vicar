@@ -41,7 +41,7 @@ const CarouselDos = ({data, imgSize, timeOut, arrows}) => {
                 {(data).map((item, index) => (
                     <>
                         <img 
-                        key={index} 
+                        key={`slide${index}`} 
                         src={item.imgData} 
                         alt={`Slide ${index}`} 
                         width= {imgSize} 

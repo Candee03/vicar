@@ -19,19 +19,19 @@ const Footer = () => {
 
             <div className='container-contact-footer'>
                 <div className='social-media-logos'>
-                    <Link href=''>
+                    <Link to={'home'}>
                         <img className='img-social-media' alt='' src={whatsapp}/>
                     </Link>
-                    <Link href=''>
+                    <Link to={'home'}>
                         <img className='img-social-media' alt='' src={instagram}/>
                     </Link>
-                    <Link href=''>
+                    <Link to={'home'}>
                         <img className='img-social-media' alt='' src={phone}/>
                     </Link>
-                    <Link href=''>
+                    <Link to={'home'}>
                         <img className='img-social-media' alt='' src={email}/>
                     </Link>
-                    <Link href=''>
+                    <Link to={'home'}>
                         <img className='img-social-media' alt='' src={map}/>
                     </Link>
                 </div>

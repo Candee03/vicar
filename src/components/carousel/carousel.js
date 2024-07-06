@@ -42,7 +42,7 @@ const Carousel = ({data, timeOut, arrows}) => {
                 {(data).map((item, index) => (
                     <>
                         <img 
-                        key={index} 
+                        key={`slide${index}`} 
                         src={item.imgData} 
                         alt={`Slide ${index}`}  
                         className={index === currentIndex ? 'active img-carousel-home' : 'disable'}/>
