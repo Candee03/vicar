@@ -91,8 +91,8 @@ export const homeBanner = [
         imgData:img2,
         title:`SEGURIDAD
         A MEDIDA
-        PARA HOGARES
-        O COMERCIOS`,
+        PARA HOGARES O 
+        COMERCIOS`,
         btnName: 'Cotizar',
         btnLink: ''
     },
