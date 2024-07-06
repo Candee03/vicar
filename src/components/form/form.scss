@@ -1,0 +1,55 @@
+@import '../../styles/variables.scss';
+
+.container-form {
+    .from {
+        .div-input {
+            margin-top: 1.5rem;
+            .input-from {
+                width: 98%;
+                font-size: 20px;
+                line-height: 12px;
+                letter-spacing: 0.4px;
+                border: none;
+                border-radius: 8px;
+                padding: 1rem 0 1rem 0.5rem;
+                color: $black;
+            }
+        }
+        .div-textarea {
+            margin-top: 1.5rem;
+            .textarea-form {
+                height: 5.5rem;
+                width: 98%;
+                font-size: 20px;
+                line-height: 12px;
+                letter-spacing: 0.4px;
+                border: none;
+                border-radius: 8px;
+                padding: 1rem 0 1rem 0.5rem;
+                color: $black;
+            }
+        }
+        .p-message-form {
+            text-align: center;
+            margin-top: 1rem;
+            color: $white;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.4px;
+            line-height: 25px;
+        }
+        .btn-submit {
+            cursor: pointer;
+            border-radius: 12px;
+            padding: 0.6rem 0;
+            width: 100%;
+            background-color: $dark-red ;
+            text-align: center;
+            color: $white;
+            font-weight: 700;
+            font-size: 16px;
+            border: none;
+            margin: 1.5rem 0;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@import '../../styles/variables.scss';
+
+.subtitle-container {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    .logo-subtitle {
+        width: 2.25rem;
+        padding-right: 1rem;
+    }
+    .p-subtitle {
+        font-size: 24px;
+        font-weight: 800;
+        color: $red;
+    }
+}

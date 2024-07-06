@@ -1,17 +1,22 @@
 @import '../../styles/variables.scss';
 
 header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
     .nav {
+        height: 3.5rem;
         padding: 0 1.5rem;
         display: flex;
         justify-content: space-between;
         background-color: $red;
         .btn-nav {
-            padding: 0 10px;
-            color: $white;
             background-color: transparent;
             border: none;
-            font-size: 30px;
+            .img-menu {
+                width: 3rem;
+            }
         }
     }
 }
@@ -26,14 +31,29 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.651);
+    background-color: $navBar;
+    opacity: 90%;
     list-style: none;
     .li-nav-bar {
-        padding: 10px 0;
-        color: $white;
+        padding: 20px 0;
         cursor: pointer;
+        a {
+            font-size: 16px;
+            font-weight: 700;
+            color: $white;
+        }
     }
 }
+.nav-bar-bg {
+    z-index: 2;
+    top: 471px;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    background-color: transparent;
+}
+
 .disable {
     position: absolute;
     opacity: 0;

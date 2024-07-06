@@ -12,6 +12,8 @@ import SmartPanic from '../sections/smartPanic/SmartPanic';
 import NuestrosClientes from '../sections/nuestrosClientes/NuestrosClientes';
 import Opiniones from '../sections/opiniones/Opiniones';
 import Footer from '../sections/footer/Footer';
+import CV from '../sections/cv/CV';
+import CotizarSC from '../sections/cotizar/CotizarSC';
 
 const MainPage = () => {
     //------------MEDIASQUERY--------------
@@ -19,12 +21,12 @@ const MainPage = () => {
 
     return (
         <>
-            <Navbar navList= {['Quiénes Somos', 'Nuestros Servicios', 'Videoverificación Inteligente', 'SmartPanic', 'Nuestros Clientes', 'Opiniones']}/>
-            <Element name='home' >
-                <Home/>
-            </Element>
+            <Navbar navList= {['Quiénes Somos', 'Nuestros Servicios', 'Videoverificación Inteligente', 'SmartPanic', 'Nuestros Clientes', 'Opiniones', 'Cotizar']}/>
 
             <main>
+                <Element name='home' >
+                    <Home/>
+                </Element>
                 <Element name='quiénes-somos'>
                     <QuienesSomos title={'Quiénes somos'}/>
                 </Element>
@@ -34,7 +36,7 @@ const MainPage = () => {
                 <Element name='videoverificación-inteligente'>
                     <VideoInteligente title={'Videoverificación inteligente'}/>
                 </Element>
-                <Element name='smartPanic'>
+                <Element name='smartpanic'>
                     <SmartPanic title={'SmartPanic'}/>
                 </Element>
                 <Element name='nuestros-clientes'>
@@ -42,6 +44,12 @@ const MainPage = () => {
                 </Element>
                 <Element name='opiniones'>
                     <Opiniones title={'Opiniones'}/>
+                </Element>
+                <Element name='cotizar'>
+                    <CotizarSC title={'Cotizar sin costo'}/>
+                </Element>
+                <Element name='cv'>
+                    <CV/>
                 </Element>
             </main>
 

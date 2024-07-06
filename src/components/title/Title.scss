@@ -3,7 +3,7 @@
 
 .container-title {
     padding: 1.5rem 0;
-    .title {
+    .title-red {
         position: relative;
         font-size: 32px;
         font-weight: 800;
@@ -11,7 +11,7 @@
         text-align: left;
         padding: 0.5rem 0;
     }
-    .title::before {
+    .title-red::before {
         content: '';
         position: absolute;
         top: 100%;
@@ -19,5 +19,23 @@
         height: 3px;
         width: 80%;
         background-color: $dark-red;
+    }
+    
+    .title-white {
+        position: relative;
+        font-size: 32px;
+        font-weight: 800;
+        color: $white;
+        text-align: left;
+        padding: 0.5rem 0;
+    }
+    .title-white::before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        right: -23px;
+        height: 3px;
+        width: 80%;
+        background-color: $white;
     }
 }

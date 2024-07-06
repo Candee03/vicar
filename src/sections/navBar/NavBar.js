@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
-import './NavBar.scss'
 import { Link } from 'react-scroll';
+//styles
+import './NavBar.scss'
+//components
 import Logo from '../../components/logo/Logo';
+import menuLogo from './menu-logo.png'
 
 const Navbar = ({navList}) => {
     const [deployed, setDeployed] = useState(false)
@@ -27,7 +30,7 @@ const Navbar = ({navList}) => {
         <header>
             <nav className='nav'>
                 <Logo size={56}/>
-                <button onClick={() => clickNav()} className='btn-nav'>&#8801;</button>
+                <button onClick={() => clickNav()} className='btn-nav'><img className='img-menu' alt='' src={menuLogo} /></button>
             </nav>
 
             <ul className={deployed?'ul-nav-bar': 'disable'}>
@@ -37,7 +40,7 @@ const Navbar = ({navList}) => {
                         {navList.map((li) => {
                             return (
                                 <li className='li-nav-bar'>
-                                    <Link onClick={() => clickNav()} to={`${parse(li)}`} smooth={true} duration={500}>
+                                    <Link onClick={() => clickNav()} to={`${parse(li)}`} delay={200} smooth={true} duration={800} offset={-60}>
                                         {li} 
                                     </Link>
                                 </li>
@@ -48,6 +51,7 @@ const Navbar = ({navList}) => {
                     <></>
                 }
             </ul>
+            <div onClick={()=> clickNav()} className={deployed?'nav-bar-bg': 'disable'}></div>
         </header>
     );
 }

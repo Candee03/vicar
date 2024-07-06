@@ -1,0 +1,22 @@
+@import '../../styles/variables.scss';
+
+.bg-cotizar {
+    background: linear-gradient(to bottom left, $dark-red2 30%, $red 56%, $dark-red2 90%);
+    .container-cotizar {
+        padding-top: 1.5rem;
+        margin: $margin-main-mobile;
+        .container-content-cotizar {
+            display: flex;
+            flex-direction: column;
+            .p-cotizar {
+                text-align: left;
+                display: block;
+                color: $white;
+                line-height: 30px;
+                font-size: 16px;
+                letter-spacing: 0.4px;
+                font-weight: 700;
+            }
+        }
+    }
+}

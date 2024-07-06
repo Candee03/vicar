@@ -5,7 +5,7 @@ import { Link } from 'react-scroll'
 
 const Logo = ({size}) => {
     return (
-        <Link to='home'>
+        <Link to='home' delay={200} smooth={true} duration={800}>
             <img width={size} alt='logo de vicar' className='logo-header' src={logo}/>
         </Link>
     )

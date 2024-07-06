@@ -3,12 +3,17 @@
 //config values
 main {
   background-color: $white;
-  margin: $margin-main-mobile;
 }
+// @media screen and (min-width: 560px) {
+//   main {
+//     background-color: $red;
+//   }
+// }
 
 
 //reset all values to default
 * {
+  color: $black;
   margin: 0;
   padding: 0;
   text-decoration: none;

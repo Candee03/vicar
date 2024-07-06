@@ -5,7 +5,7 @@ import { Link } from 'react-scroll'
 /**
  * 
  * @param {*} param0 
- * @param {*} btnType: 'home'//'NS'
+ * @param {*} btnType: 'home'//'NS'//'Cotizar'
  * @returns 
  */
 const Btn = ({innerText, btnType, linkTo}) => {

@@ -23,14 +23,21 @@ const transporter = nodemailer.createTransport({
 
 // Ruta para enviar correos electrónicos
 app.post('/send-email', (req, res) => {
-    const { name, email, phone, subject, message } = req.body;
+    const { name, lastName, email, phone, message } = req.body;
 
     const mailOptions = {
-    from: email,
-    to: email,
-    subject: subject,
+        //MODIFICAR
+    from: 'candela.alfano1503@gmail.com',
+    to: 'candela.alfano1503@gmail.com',
+    subject: 'Formulario de cotización de Vicar',
     // FORMATO DEL CORREO QUE SE VA A ENVIAR
-    text: `Nombre: ${name}\nCorreo Electrónico: ${email}\nTeléfono: ${phone}\nMensaje: ${message}`,
+    text: `
+    Nombre: ${name} 
+    Apellido: ${lastName}
+    Correo Electrónico: ${email}
+    Teléfono: ${phone}
+    Mensaje: ${message}
+    `,
 };
 
 transporter.sendMail(mailOptions, (error, info) => {

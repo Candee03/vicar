@@ -1,0 +1,24 @@
+@import '../../styles/variables.scss';
+
+.container-check {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    .logo-check {
+        width: 1.5rem;
+        margin-right: 0.5rem;
+    }
+    .p-check {
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.4px;
+    }
+}
+
+@media  screen and (min-width: 500px) {
+    .container-check {
+        .p-check {
+            white-space: pre-line;
+        }
+    }
+}

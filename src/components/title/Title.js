@@ -1,10 +1,10 @@
 import React from 'react';
 import './Title.scss';
 
-const Title = ({title}) => {
+const Title = ({title, txtColor}) => {
     return (
         <div className='container-title'>
-            <p className='title'>
+            <p className={txtColor? `title-${txtColor}`: 'title-red'}>
                 {title}
             </p>
         </div>

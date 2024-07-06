@@ -1,8 +1,11 @@
 import React from 'react';
+//provider
+import { dataNuestrosServicios } from '../../data/data';
+//styles
+import './servicios.scss'
 //components
 import Title from '../../components/title/Title';
 import Btn from '../../components/botton/Btn';
-import { dataNuestrosServicios } from '../../data/data';
 import CarouselDos from '../../components/carousel/CarouselDos';
 
 const Servicios = ({title}) => {
