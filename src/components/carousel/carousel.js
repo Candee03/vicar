@@ -15,12 +15,12 @@ const Carousel = ({data, timeOut, arrows}) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
-    const interval = setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % (data).length);
-    }, parseInt(timeOut));
-
-    return () => clearInterval(interval);
-    }, [(data).length]);
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
+        }, parseInt(timeOut, 10)); // Asegurando que timeOut sea parseado como base 10
+    
+        return () => clearInterval(interval);
+    }, [data.length, timeOut]);
     
     // FUNCION PARA CAMBIAR LA IMAGEN
     const changeImg = (change) => {
@@ -40,9 +40,9 @@ const Carousel = ({data, timeOut, arrows}) => {
             <div className="container-carousel-home">
                 <div className="carousel-home">
                 {(data).map((item, index) => (
-                    <>
+                    <div key={index}>
                         <img 
-                        key={`slide${index}`} 
+                        key={index} 
                         src={item.imgData} 
                         alt={`Slide ${index}`}  
                         className={index === currentIndex ? 'active img-carousel-home' : 'disable'}/>
@@ -54,7 +54,7 @@ const Carousel = ({data, timeOut, arrows}) => {
                                 {item.text}</p>: <></> }
                             {item.btnName? <Btn btnType={'home'} innerText={item.btnName}/> : <></>}
                         </div>
-                    </>
+                    </div>
                 ))}
                 </div>
             </div>
