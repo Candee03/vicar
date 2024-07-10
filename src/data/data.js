@@ -70,14 +70,6 @@ export const dataNuestrosServicios = [
         text: 'Instalación de GPS y control de flotas.'
     },
 ]
-export const images = [
-    'https://st2.depositphotos.com/1000686/8892/i/450/depositphotos_88920606-stock-photo-three-white-labrador-puppy-in.jpg',
-    'https://st2.depositphotos.com/1000686/8892/i/450/depositphotos_88920606-stock-photo-three-white-labrador-puppy-in.jpg',
-    'https://st2.depositphotos.com/1000686/8892/i/450/depositphotos_88920606-stock-photo-three-white-labrador-puppy-in.jpg',
-    'https://st2.depositphotos.com/1000686/8892/i/450/depositphotos_88920606-stock-photo-three-white-labrador-puppy-in.jpg',
-    'https://st2.depositphotos.com/1000686/8892/i/450/depositphotos_88920606-stock-photo-three-white-labrador-puppy-in.jpg',
-    'https://st2.depositphotos.com/1000686/8892/i/450/depositphotos_88920606-stock-photo-three-white-labrador-puppy-in.jpg',
-]
 export const homeBanner = [
     {
         imgData:img1,
@@ -114,4 +106,7 @@ export const nuestrosClientesData = [
     cliente14,
     cliente15,
     cliente16
+]
+export const opinionesData = [
+    
 ]
