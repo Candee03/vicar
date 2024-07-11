@@ -12,8 +12,12 @@ $dark-gray: #323232;
 $navBar: rgba(50, 50, 50, 0.9);
 $transparent: #fcfcfc00;
 
+//MEDIASQUERIES
+$desktop: 1000px;
+$tablet: 500px;
 
 $margin-main-mobile: 0 1.5rem;
+$margin-main-desktop: 0 4.5rem;
 
 .arrow-carousel {
     position: relative;

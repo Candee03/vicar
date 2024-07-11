@@ -3,10 +3,35 @@
 .container-videointeligente {
     .content-1, .content-2 {
         margin: $margin-main-mobile;
-        .p-videoInteligente {
-            font-size: 16px;
-            line-height: 30px;
-            margin-bottom: 1.5rem;
+        .cont-info {
+            .p-videoInteligente {
+                font-size: 16px;
+                line-height: 30px;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 1300px){
+    .container-videointeligente {
+        .content-2 {
+            display: flex;
+            justify-content: space-between;
+            width: fit-content;
+            .cont-info {
+                width: 18rem;
+                margin-right: 2rem;
+            }
+        }
+    }
+}
+@media screen and (min-width: $desktop){
+    .container-videointeligente {
+        .content-1, .content-2 {
+            margin:  $margin-main-desktop;
         }
     }
 }

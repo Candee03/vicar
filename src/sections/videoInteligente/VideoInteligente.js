@@ -17,10 +17,14 @@ const VideoInteligente = ({title}) => {
             </div>
             <ImgVideoInteligente/>
             <div className='content-2'>
-                <Subtitle innerText={'Sistema proactivo'} image={sistemaProactivo}/>
-                <p className='p-videoInteligente'>Permite prevenir e intervenir en el momento en que se produce una intrusión.</p>
-                <Subtitle innerText={'Vigilancia precisa y efectiva'} image={vigilancia}/>
-                <p className='p-videoInteligente'>Filtra hasta el 90% de falsas alarmas causadas por animales y objetos en movimiento.</p>
+                <div className='cont-info'>
+                    <Subtitle innerText={'Sistema proactivo'} image={sistemaProactivo}/>
+                    <p className='p-videoInteligente'>Permite prevenir e intervenir en el momento en que se produce una intrusión.</p>
+                </div>
+                <div className='cont-info'>
+                    <Subtitle innerText={'Vigilancia precisa y efectiva'} image={vigilancia}/>
+                    <p className='p-videoInteligente'>Filtra hasta el 90% de falsas alarmas causadas por animales y objetos en movimiento.</p>
+                </div>
             </div>
         </div>
     )
