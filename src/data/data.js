@@ -27,6 +27,9 @@ import cliente16 from '../img/nuestros-clientes/cliente16.png'
 // IMAGENES homeBanner
 import img1 from '../img/home-carousel/img1.png'
 import img2 from '../img/home-carousel/img2.png'
+import img1D from '../img/home-carousel/img1-desktop.png'
+import img2D from '../img/home-carousel/img2-desktop.png'
+
 
 
 export const dataNuestrosServicios = [
@@ -85,6 +88,24 @@ export const homeBanner = [
         A MEDIDA
         PARA HOGARES O 
         COMERCIOS`,
+        btnName: 'Cotizar',
+        btnLink: ''
+    },
+]
+export const homeBannerDesktop = [
+    {
+        imgData:img1D,
+        title:`INNOVAMOS
+        EN SEGURIDAD`,
+        text: 'Tecnología de punta en videoverificación',
+        btnName: 'Más información',
+        btnLink: ''
+    },
+    {
+        imgData:img2D,
+        title:`SEGURIDAD A MEDIDA
+        PARA HOGARES 
+        O COMERCIOS`,
         btnName: 'Cotizar',
         btnLink: ''
     },

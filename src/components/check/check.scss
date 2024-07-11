@@ -22,3 +22,11 @@
         }
     }
 }
+@media  screen and (min-width: $desktop) {
+    .container-check {
+        .p-check {
+            font-size: 20px;
+            line-height: 36px;
+        }
+    }
+}
