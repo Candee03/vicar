@@ -4,4 +4,13 @@
     margin: $margin-main-mobile;
     display: flex;
     flex-direction: column;
+    .video-quienesSomos {
+    height: 100%;
+    max-height: 45.5rem;
+    }
+}
+@media screen and (min-width: $desktop){
+    .container-quienesSomos {
+        margin:  $margin-main-desktop;
+    }
 }

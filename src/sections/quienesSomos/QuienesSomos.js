@@ -9,7 +9,7 @@ const QuienesSomos = ({title}) => {
     return (
         <div className='container-quienesSomos'>
             <Title title={title}/>
-            <img alt='video de presentacion' src={video}></img>
+            <img className='video-quienesSomos' alt='video de presentacion' src={video}></img>
         </div>
     )
 }

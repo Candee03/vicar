@@ -9,6 +9,7 @@
     .container-smartPanic {
         margin: $margin-main-mobile;
         .img-app {
+            max-width: 26rem;
             width: 90vw;
         }
         .subtitle-smartPanic {
@@ -32,4 +33,12 @@
     height: 30px;
     background: linear-gradient(to bottom, $transparent, $white);
     pointer-events: none;
+}
+
+@media screen and (min-width: $desktop){
+    .img-bg {
+        .container-smartPanic {
+            margin:  $margin-main-desktop;
+        }
+    }
 }

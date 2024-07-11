@@ -3,7 +3,9 @@
 .container-cv {
     border: 4px solid $dark-red;
     border-radius: 12px;
-    margin: 1.5rem;
+    margin: $margin-main-mobile;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     padding: 1.5rem;
     .container-title-and-img {
         display: flex;
@@ -47,5 +49,13 @@
                 text-decoration: underline;
             }
         }
+    }
+}
+
+@media screen and (min-width: $desktop){
+    .container-cv {
+        margin:  $margin-main-desktop;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 }

@@ -18,16 +18,13 @@
         right: -23px;
         height: 3px;
         width: 80%;
+        max-width: 18.7rem;
         background-color: $dark-red;
     }
     
     .title-white {
-        position: relative;
-        font-size: 32px;
-        font-weight: 800;
+        @extend .title-red;
         color: $white;
-        text-align: left;
-        padding: 0.5rem 0;
     }
     .title-white::before {
         content: '';
@@ -36,6 +33,34 @@
         right: -23px;
         height: 3px;
         width: 80%;
+        max-width: 18.7rem;
         background-color: $white;
+    }
+}
+
+@media screen and (min-width: 415px) {
+    .container-title {
+        width: fit-content;
+        min-width: 22.5rem;
+        .title-red::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            right: -23px;
+            height: 3px;
+            width: 80%;
+            max-width: 18.7rem;
+            background-color: $dark-red;
+        }
+        .title-white::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            right: -23px;
+            height: 3px;
+            width: 80%;
+            max-width: 18.7rem;
+            background-color: $white;
+        }
     }
 }

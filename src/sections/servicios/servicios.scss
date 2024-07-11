@@ -3,3 +3,9 @@
 .container-Servicios {
     margin: $margin-main-mobile;
 }
+
+@media screen and (min-width: $desktop){
+    .container-Servicios {
+        margin:  $margin-main-desktop;
+    }
+}

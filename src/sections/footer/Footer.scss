@@ -6,9 +6,10 @@
     .container-logo-footer {
         display: flex;
         justify-content: center;
+        margin-bottom: 1.5rem;
     }
     .container-contact-footer {
-        margin: 1.5rem;
+        margin: $margin-main-mobile;
         height: 26rem;
         display: flex;
         flex-direction: column;
@@ -41,6 +42,7 @@
     }
     .container-credits-footer {
         background-color: $dark-gray;
+        margin-top: 1.5rem;
         .p-credits {
             padding: 0.5rem 0;
             font-style: italic;
@@ -53,6 +55,14 @@
                 color: $red;
                 text-decoration: none;
             }
+        }
+    }
+}
+
+@media screen and (min-width: $desktop){
+    .footer {
+        .container-contact-footer {
+            margin: $margin-main-desktop;
         }
     }
 }

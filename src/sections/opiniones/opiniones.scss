@@ -3,3 +3,9 @@
 .container-opiniones {
     margin: $margin-main-mobile;
 }
+
+@media screen and (min-width: $desktop){
+    .container-opiniones {
+        margin:  $margin-main-desktop;
+    }
+}

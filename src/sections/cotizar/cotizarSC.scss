@@ -20,3 +20,11 @@
         }
     }
 }
+
+@media screen and (min-width: $desktop){
+    .bg-cotizar {
+        .container-cotizar {
+            margin:  $margin-main-desktop;
+        }
+    }
+}
