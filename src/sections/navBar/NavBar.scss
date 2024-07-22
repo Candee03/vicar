@@ -59,3 +59,11 @@ header {
     opacity: 0;
     transition: opacity 0.3s linear;
 }
+
+@media screen and (min-width: $desktop) {
+    header {
+        .nav {
+            background-color: $white;
+        }
+    }
+}
