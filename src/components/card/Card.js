@@ -9,7 +9,7 @@ const Card = ({ data }) => {
                 data.map((item, index) => {
                     return (
                         <div className='card'>
-                            <img className='img-card' key={index} src={item.imgData}/>
+                            <img alt='' className='img-card' key={index} src={item.imgData}/>
                             {item.title? 
                             <p className='title-card'>{item.title}</p>: <></> }
                             {item.text? 
