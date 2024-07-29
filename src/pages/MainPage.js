@@ -21,7 +21,7 @@ const MainPage = () => {
 
     return (
         <>
-            <Navbar navList= {['Quiénes Somos', 'Nuestros Servicios', 'Videoverificación Inteligente', 'SmartPanic', 'Nuestros Clientes', 'Opiniones', 'Cotizar']}/>
+            <Navbar navList= {['Quiénes Somos', 'Servicios', 'SmartPanic', 'Clientes', 'Cotizar']}/>
 
             <main>
                 <Element name='home' >
@@ -30,7 +30,7 @@ const MainPage = () => {
                 <Element name='quiénes-somos'>
                     <QuienesSomos title={'Quiénes somos'}/>
                 </Element>
-                <Element name='nuestros-servicios'>
+                <Element name='servicios'>
                     <Servicios title={'Nuestros servicios'}/>
                 </Element>
                 <Element name='videoverificación-inteligente'>
@@ -39,7 +39,7 @@ const MainPage = () => {
                 <Element name='smartpanic'>
                     <SmartPanic title={'SmartPanic'}/>
                 </Element>
-                <Element name='nuestros-clientes'>
+                <Element name='clientes'>
                     <NuestrosClientes title={'Nuestros clientes'}/>
                 </Element>
                 <Element name='opiniones'>
