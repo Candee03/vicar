@@ -14,7 +14,7 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className='container-logo-footer'>
-                <Logo type={'footer'} size={100}/>
+                <Logo type={'2'} size={100}/>
             </div>
 
             <div className='container-contact-footer'>
@@ -56,7 +56,7 @@ const Footer = () => {
             </div>
 
             <div className='container-credits-footer'>
-                <p className='p-credits'>Desarrollado por <a className='a-credits' href='https://bedigital.uno/'>BE DIGITAL</a></p>
+                <p className='p-credits'>Desarrollado por <a rel="noreferrer" target='_blank' className='a-credits' href='https://bedigital.uno/'>BE DIGITAL</a></p>
             </div>
         </div>
     )
