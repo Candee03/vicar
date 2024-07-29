@@ -10,6 +10,7 @@
         border-radius: 12px;
         width: 12rem;
         background-color: $red;
+        transition: 0.3s;
         padding: 0.7rem 1.3rem;
         .text-btn-NS {
             text-align: center;
@@ -19,6 +20,9 @@
             letter-spacing: 0.4px;
             line-height: 20px;
         }
+    } :hover {
+        transition: 0.3s;
+        background-color: $dark-red;
     }
 }
 .div-container-div-home {
@@ -27,6 +31,7 @@
         cursor: pointer;
         border-radius: 12px;
         padding: 0.6rem 1.2rem;
+        transition: 0.3s;
         background-color: $transparent-white;
         .text-btn-home {
             text-align: center;
@@ -34,36 +39,35 @@
             font-weight: 700;
             font-size: 16px;
         }
-    } 
-    
+    } :hover {
+        transition: 0.3s;
+        background-color: $white;
+        .text-btn-home {
+            color: $black;
+        }
+    }
 }
 .div-container-div-Cotizar {
     display: flex;
     justify-content: center;
     margin: 1.5rem 0;
     .container-btn-Cotizar {
+        transition: 0.3s;
         cursor: pointer;
         border-radius: 12px;
         padding: 0.6rem 0;
         width: 100%;
-        background-color: $dark-red ;
+        background-color: $transparent-white ;
         .text-btn-Cotizar {
             text-align: center;
             color: $white;
             font-weight: 700;
             font-size: 16px;
         }
-    } 
-    
-}
-
-@media screen and (min-width: 1000px) {
-    .container-btn-NS:hover {
-        background-color: $dark-red;
-    }
-    .container-btn-home:hover {
+    }:hover {
+        transition: 0.3s;
         background-color: $white;
-        .text-btn-home {
+        .text-btn-Cotizar {
             color: $black;
         }
     }

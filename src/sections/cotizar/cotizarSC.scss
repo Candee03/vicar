@@ -5,26 +5,36 @@
     .container-cotizar {
         padding-top: 1.5rem;
         margin: $margin-main-mobile;
-        .container-content-cotizar {
-            display: flex;
-            flex-direction: column;
-            .p-cotizar {
-                text-align: left;
-                display: block;
-                color: $white;
-                line-height: 30px;
-                font-size: 16px;
-                letter-spacing: 0.4px;
-                font-weight: 700;
+        .main-container-content-cotizar {
+            .container-content-cotizar {
+                display: flex;
+                flex-direction: column;
+                .p-cotizar {
+                    text-align: left;
+                    display: block;
+                    color: $white;
+                    line-height: 30px;
+                    font-size: 16px;
+                    letter-spacing: 0.4px;
+                    font-weight: 700;
+                }
             }
         }
     }
 }
 
-@media screen and (min-width: $desktop){
+
+@media screen and (min-width: 1300px){
     .bg-cotizar {
         .container-cotizar {
             margin:  $margin-main-desktop;
+            .main-container-content-cotizar {
+                display: flex;
+                justify-content: center;
+                .container-content-cotizar {
+                    width: 35rem;
+                }
+            }
         }
     }
 }

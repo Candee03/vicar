@@ -10,12 +10,14 @@ const CotizarSC = ({title}) => {
         <div className='bg-cotizar'>
             <div className='container-cotizar'>
                 <Title title={title} txtColor={'white'}/>
-                <div className='container-content-cotizar'>
-                    <p className='p-cotizar'>Si lo prefieres:</p>
-                    {/* //MODIFICAR */}
-                    <Btn innerText={'Cotizar por WhatsApp'} btnType={'Cotizar'} linkTo={''} />
-                    <p className='p-cotizar'>O completa el formulario y te contactaremos:</p>
-                    <Form/>
+                <div className='main-container-content-cotizar'>
+                    <div className='container-content-cotizar'>
+                        <p className='p-cotizar'>Si lo prefieres:</p>
+                        {/* //MODIFICAR */}
+                        <Btn innerText={'Cotizar por WhatsApp'} btnType={'Cotizar'} linkTo={''} />
+                        <p className='p-cotizar'>O completa el formulario y te contactaremos:</p>
+                        <Form/>
+                    </div>
                 </div>
             </div>
         </div>
