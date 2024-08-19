@@ -9,9 +9,7 @@
         margin-right: 0.5rem;
     }
     .p-check {
-        font-size: 16px;
-        line-height: 30px;
-        letter-spacing: 0.4px;
+        @extend .text;
     }
 }
 
@@ -19,14 +17,6 @@
     .container-check {
         .p-check {
             white-space: pre-line;
-        }
-    }
-}
-@media  screen and (min-width: $desktop) {
-    .container-check {
-        .p-check {
-            font-size: 20px;
-            line-height: 36px;
         }
     }
 }

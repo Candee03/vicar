@@ -20,17 +20,15 @@
                     .title-carousel-home {
                         white-space: pre-line;
                         color: $white;
-                        font-size: 44px;
+                        @extend .title-home-44;
                         font-weight: 800;
-                        line-height: 64px;
                         padding: 2.7rem 0;
                     }
                     .text-carousel-home {
                         color: $white;
                         width: 10rem;
-                        font-size: 20px;
+                        @extend .text-20;
                         font-weight: 700;
-                        line-height: 30px;
                         padding-bottom: 2rem;
                     }
                 }

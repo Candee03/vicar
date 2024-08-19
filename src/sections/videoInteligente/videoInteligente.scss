@@ -5,8 +5,7 @@
         margin: $margin-main-mobile;
         .cont-info {
             .p-videoInteligente {
-                font-size: 16px;
-                line-height: 30px;
+                @extend .text;
                 margin-bottom: 1.5rem;
             }
         }

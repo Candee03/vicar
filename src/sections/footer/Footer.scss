@@ -29,9 +29,8 @@
                 @extend .p-contact-data;
             }
             .p-contact-data {
-                font-size: 16px;
+                @extend .text;
                 line-height: 24px;
-                letter-spacing: 0.4px;
             }
             .p-politica-de-privacidad {
                 @extend .p-contact-data;

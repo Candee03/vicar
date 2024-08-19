@@ -5,8 +5,7 @@
     padding: 1.5rem 0;
     .title-red {
         position: relative;
-        font-size: 32px;
-        font-weight: 800;
+        @extend .title-underline-32;
         color: $dark-red;
         text-align: left;
         padding: 0.5rem 0;

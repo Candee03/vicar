@@ -33,10 +33,9 @@
             text-align: center;
             margin-top: 1rem;
             color: $white;
-            font-size: 16px;
-            font-weight: 500;
-            letter-spacing: 0.4px;
+            @extend .text;
             line-height: 25px;
+            font-weight: 500;
         }
         .btn-submit {
             cursor: pointer;
@@ -47,7 +46,7 @@
             text-align: center;
             color: $white;
             font-weight: 700;
-            font-size: 16px;
+            @extend .text;
             border: none;
             margin: 1.5rem 0;
             transition: 0.3s;

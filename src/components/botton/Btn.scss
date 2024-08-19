@@ -16,8 +16,7 @@
             text-align: center;
             color: $white;
             font-weight: 700;
-            font-size: 20px;
-            letter-spacing: 0.4px;
+            @extend .text-20;
             line-height: 20px;
         }
     } :hover {
@@ -37,7 +36,7 @@
             text-align: center;
             color: $white;
             font-weight: 700;
-            font-size: 16px;
+            @extend .text;
         }
     } :hover {
         transition: 0.3s;
@@ -62,7 +61,7 @@
             text-align: center;
             color: $white;
             font-weight: 700;
-            font-size: 16px;
+            @extend .text;
         }
     }:hover {
         transition: 0.3s;

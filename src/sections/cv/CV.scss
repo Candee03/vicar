@@ -16,9 +16,8 @@
             .title-cv {
                 white-space: pre-line;
                 color: $red;
-                font-size: 24px;
-                line-height: 30px;
                 font-weight: 700;
+                @extend .text;
             }
             .logo-cv {
                 width: 3.75rem;
@@ -30,22 +29,18 @@
             justify-content: space-between;
             height: 70%;
             .p-cv {
-                font-size: 16px;
-                line-height: 30px;
+                @extend .text;
                 font-weight: 500;
             }
             .container-email {
                 .subtitle-cv {
-                    font-size: 16px;
-                    line-height: 30px;
+                    @extend .text;
                     font-weight: 700;
                     
                 }
                 .email-cv {
                     cursor: pointer;
-                    font-size: 16px;
-                    line-height: 30px;
-                    letter-spacing: 0.4px;
+                    @extend .text;
                     font-weight: 500;
                     text-decoration: underline;
                 }
