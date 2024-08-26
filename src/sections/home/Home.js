@@ -6,10 +6,10 @@ import Carousel from '../../components/carousel/Carousel.js'
 import { useMediaQuery } from 'react-responsive';
 
 const Home = () => {
-    const isMpbile = useMediaQuery({ query: '(max-width: 600px)'});
+    const isMobile = useMediaQuery({ query: '(max-width: 600px)'});
     return (
         <>
-            {isMpbile?
+            {isMobile?
             <Carousel timeOut='4000' data={homeBanner} arrows={'false'}/>
             :
             <Carousel timeOut='4000' data={homeBannerDesktop} arrows={'false'}/>

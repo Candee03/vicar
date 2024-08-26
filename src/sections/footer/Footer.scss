@@ -2,19 +2,36 @@
 
 
 .footer {
+    padding-top: 1.5rem;
     background-color: $dark-white;
     .container-logo-footer {
         display: flex;
         justify-content: center;
+        align-items: center;
         margin-bottom: 1.5rem;
     }
     .container-contact-footer {
         margin: $margin-main-mobile;
-        height: 26rem;
+        height: 8rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
+        .div-emergencias {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .emergencias {
+                text-align: center;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.4px;
+                color: $red;
+                font-weight: 700;
+            }
+        }
         .social-media-logos {
             display: flex;
             justify-content: space-evenly;
@@ -23,20 +40,32 @@
                 width: 2rem;
             }
         }
+    }
+    .container-contact-data {
+        margin: $margin-main-mobile;
+        height: 21rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
         .contact-data {
+            .p-contact-data {
+                @extend .text;
+                white-space: pre-line;
+                line-height: 24px;
+            }
             .p-bold-contact-data{
                 font-weight: 700;
                 @extend .p-contact-data;
             }
-            .p-contact-data {
-                @extend .text;
-                line-height: 24px;
-            }
-            .p-politica-de-privacidad {
-                @extend .p-contact-data;
-                font-weight: 700;
-                text-decoration: underline;
-            }
+        }
+    }
+    .container-pol-priv {
+        margin: $margin-main-mobile;
+        .p-politica-de-privacidad {
+            @extend .p-contact-data;
+            font-weight: 700;
+            text-decoration: underline;
         }
     }
     .container-credits-footer {
@@ -58,10 +87,51 @@
     }
 }
 
-@media screen and (min-width: $desktop){
+@media screen and (min-width: 1300px){
     .footer {
+        position: relative;
+        padding-top: 6.9rem;
+        .container-logo-footer {
+            position: absolute;
+            left: 4.5rem;
+            top: 2.5rem;
+            margin: $margin-main-desktop;
+        }
         .container-contact-footer {
             margin: $margin-main-desktop;
+            width: 16rem;
+            height: 6.6rem;
+            .social-media-logos {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                .img-social-media {
+                    width: 2rem;
+                }
+            }
+        }
+        .container-contact-data {
+            margin: 0;
+            position: absolute;
+            right: 4.5rem;
+            top: 6.9rem;
+            height: 9.5rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-start;
+            gap: 3rem;
+            .contact-data {
+                max-width: 17rem;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .container-pol-priv {
+            width: 16rem;
+            text-align: center;
+            margin: $margin-main-desktop;
+            margin-top: 1.5rem;
         }
     }
 }

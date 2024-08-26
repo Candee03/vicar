@@ -47,12 +47,8 @@ const Carousel = ({data, timeOut, arrows}) => {
                         alt={`Slide ${index}`}  
                         className={index === currentIndex ? 'active img-carousel-home' : 'disable'}/>
 
-                        <div className={index === currentIndex ? 'active container-info-banner' : 'disable'}>
-                            {item.title? <p className='title-carousel-home'>
-                                {item.title}</p>: <></> }
-                            {item.text? <p className='text-carousel-home'>
-                                {item.text}</p>: <></> }
-                            {item.btnName? <Btn btnType={'home'} innerText={item.btnName}/> : <></>}
+                        <div className={index === currentIndex ? `active container-info-banner${index}` : 'disable'}>
+                            {item.btnName? <Btn btnType={'home'} innerText={item.btnName} linkTo={item.btnLink}/> : <></>}
                         </div>
                     </div>
                 ))}

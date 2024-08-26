@@ -10,7 +10,6 @@ import Btn from '../../components/botton/Btn';
 import CarouselDos from '../../components/carousel/CarouselDos';
 import Card from '../../components/card/Card';
 
-
 const Servicios = ({title}) => {
     const isMobile = useMediaQuery({ query: '(max-width: 600px)'});
 
@@ -21,7 +20,7 @@ const Servicios = ({title}) => {
                 isMobile?
                 <>
                     <CarouselDos imgSize='100' timeOut='7000' data={dataNuestrosServicios} arrows={'true'}/>
-                    <Btn btnType={'NS'} innerText={'Cotizar sin costo'}/>
+                    <Btn linkTo={'cotizar'} btnType={'NS'} innerText={'Cotizar sin costo'}/>
                 </>
                 :
                     <Card data={dataNuestrosServicios}/>

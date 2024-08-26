@@ -13,24 +13,25 @@
                 .img-carousel-home {
                     width: 100vw;
                 }
-                .container-info-banner {
+                .container-info-banner0 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     position: absolute;
-                    top: 0;
-                    padding: 0 1.5rem 0 1rem;
-                    .title-carousel-home {
-                        white-space: pre-line;
-                        color: $white;
-                        @extend .title-home-44;
-                        font-weight: 800;
-                        padding: 2.7rem 0;
-                    }
-                    .text-carousel-home {
-                        color: $white;
-                        width: 10rem;
-                        @extend .text-20;
-                        font-weight: 700;
-                        padding-bottom: 2rem;
-                    }
+                    width: 100vw;
+                    bottom: 6rem;
+                }
+                .container-info-banner1 {
+                    @extend .container-info-banner0;
+                    bottom: 17em;
+                    left: 1.5rem;
+                    justify-content: flex-start;
+                }
+                .container-info-banner2 {
+                    @extend .container-info-banner0;
+                    bottom: 17rem;
+                    justify-content: end;
+                    right: 1.5rem;
                 }
                 .disable {
                     display: none;
@@ -38,6 +39,28 @@
                     left: 0;
                     opacity: 0;
                     color: transparent;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .main-carousel-home {
+        .container-carousel-home {
+            .carousel-home {
+                div {
+                    .container-info-banner0 {
+                        bottom: 1.5rem;
+                    }
+                    .container-info-banner1 {
+                        bottom: 8em;
+                        left: 4.5rem;
+                    }
+                    .container-info-banner2 {
+                        bottom: 10rem;
+                        right: 4.5rem;
+                    }
                 }
             }
         }

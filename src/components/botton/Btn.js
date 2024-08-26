@@ -12,7 +12,7 @@ const Btn = ({innerText, btnType, linkTo}) => {
     return (
         <div className={`div-container-div-${btnType? btnType: ''}`}>
             <div className={`container-btn-${btnType? btnType: ''}`}>
-                <Link to={linkTo? linkTo: 'home'}>
+                <Link to={linkTo? linkTo: 'home'} delay={200} smooth={true} duration={800} offset={-60}>
                     <p className={`text-btn-${btnType? btnType: ''}`}>{innerText}</p>
                 </Link>
             </div>

@@ -27,8 +27,10 @@ import cliente16 from '../img/nuestros-clientes/cliente16.png'
 // IMAGENES homeBanner
 import img1 from '../img/home-carousel/img1.png'
 import img2 from '../img/home-carousel/img2.png'
+import img3 from '../img/home-carousel/img3.png'
 import img1D from '../img/home-carousel/img1-desktop.png'
 import img2D from '../img/home-carousel/img2-desktop.png'
+import img3D from '../img/home-carousel/img3-desktop.png'
 
 
 
@@ -76,38 +78,35 @@ export const dataNuestrosServicios = [
 export const homeBanner = [
     {
         imgData:img1,
-        title:`INNOVAMOS
-        EN SEGURIDAD`,
-        text: 'Tecnología de punta en videoverificación',
         btnName: 'Más información',
-        btnLink: ''
+        btnLink: 'videoverificación-inteligente'
     },
     {
         imgData:img2,
-        title:`SEGURIDAD
-        A MEDIDA
-        PARA HOGARES O 
-        COMERCIOS`,
         btnName: 'Cotizar',
-        btnLink: ''
+        btnLink: 'cotizar'
+    },
+    {
+        imgData:img3,
+        btnName: 'Ver Video',
+        btnLink: 'quiénes-somos'
     },
 ]
 export const homeBannerDesktop = [
     {
         imgData:img1D,
-        title:`INNOVAMOS
-        EN SEGURIDAD`,
-        text: 'Tecnología de punta en videoverificación',
         btnName: 'Más información',
-        btnLink: ''
+        btnLink: 'videoverificación-inteligente'
     },
     {
         imgData:img2D,
-        title:`SEGURIDAD A MEDIDA
-        PARA HOGARES 
-        O COMERCIOS`,
         btnName: 'Cotizar',
-        btnLink: ''
+        btnLink: 'cotizar'
+    },
+    {
+        imgData:img3D,
+        btnName: 'Ver Video',
+        btnLink: 'quienes-somos'
     },
 ]
 export const nuestrosClientesData = [
