@@ -1,5 +1,5 @@
 import React from 'react'
-import './Politics.scss'
+import './politics.scss'
 
 const Politics = () => {
     return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 //Styles
-import './QuienesSomos.scss'
+import './quienesSomos.scss'
 //components
 import Title from '../../components/title/Title';
 import video from '../../img/video.mp4';
