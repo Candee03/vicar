@@ -1,8 +1,8 @@
 import React from 'react'
 //provider
-import {homeBanner, homeBannerDesktop} from '../../data/data.js'
+import {homeBanner, homeBannerDesktop} from '../../data/data'
 //component
-import Carousel from '../../components/carousel/Carousel.js'
+import Carousel from '../../components/carousel/Carousel'
 import { useMediaQuery } from 'react-responsive';
 
 const Home = () => {

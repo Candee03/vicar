@@ -1,6 +1,6 @@
 import React from 'react'
 import search from '../../img/cv/search.png'
-import './CV.scss'
+import './cv.scss'
 
 const CV = () => {
     return (

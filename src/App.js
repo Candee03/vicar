@@ -2,9 +2,9 @@ import React from 'react';
 // STYLES
 import './App.scss';
 // COMPONENTS
-import MainPage from './pages/MainPage.js';
+import MainPage from './pages/MainPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import PolDePriv from './pages/PolDePriv.js';
+import PolDePriv from './pages/PolDePriv';
 
 
 function App() {

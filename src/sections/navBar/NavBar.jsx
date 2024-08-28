@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { useMediaQuery } from 'react-responsive';
 //styles
-import './NavBar.scss'
+import './navBar.scss'
 //components
 import Logo from '../../components/logo/Logo';
 import menuLogo from './menu-logo.png'

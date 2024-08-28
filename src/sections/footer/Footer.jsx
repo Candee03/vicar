@@ -1,5 +1,5 @@
 import React from 'react'
-import './Footer.scss'
+import './footer.scss'
 import Logo from '../../components/logo/Logo'
 //provider
 import instagram from '../../img/footer/instagram.png'
