@@ -1,0 +1,22 @@
+.container-pol-de-priv {
+    padding: 1.5rem;
+    white-space: pre-line;
+    .title-pol-de-priv {
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 1.5rem;
+    }
+    .pol-de-priv {
+        margin-bottom: 1.5rem;
+    }
+    .subtitle-pol-de-priv {
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+    }
+    .seccion-pol-de-priv {
+        margin: 1rem 0.5rem;
+        .p-pol-de-priv {
+            margin: 1rem;
+        }
+    }
+}

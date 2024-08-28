@@ -1,5 +1,19 @@
 @import '../../styles/variables.scss';
 
+
+@keyframes fade-up {
+    0% {
+        transform: translateY(120px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 100;
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 .container-card {
     display: flex;
     flex-wrap: wrap;
@@ -7,6 +21,7 @@
     justify-content: center;
     gap: 2.5rem;
     .card {
+        overflow: hidden;
         width: 24rem;
         height: 24rem;
         border-radius: 12px;
@@ -32,6 +47,7 @@
             font-size: 20px;
         }
         .active-btn-card {
+            animation: fade-up 0.5s ease-out;
             transition: 0.5s;
             display: flex;
             opacity: 100%;
@@ -40,7 +56,7 @@
             height: 120px;
             background-color: $red;
             position: absolute;
-            bottom: 0;
+            bottom: 0px;
             width: 100%;
             border-bottom-left-radius: 12px;
             border-bottom-right-radius: 12px;

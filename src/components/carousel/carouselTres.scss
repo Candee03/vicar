@@ -1,0 +1,57 @@
+@import '../../styles/variables.scss';
+
+
+.main-container-carousel-tres {
+    .main-carousel-opiniones {
+        margin-bottom: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 17rem;
+        .leftArrow, .rightArrow {
+            @extend .arrow-carousel;
+            color: $gray-opinion;
+            font-size: 30px;
+            padding: 0.5rem;
+        }
+        .container-carousel-opiniones {
+            display: flex;
+            align-items: center;
+            background-color: $gray-opinion;
+            border-radius: 16px;
+            padding: 1rem;
+            .carousel-opiniones {
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .active {
+                        @extend .text;
+                        padding-bottom: 0.5rem;
+                        opacity: 1;
+                        display: block;
+                        transition: opacity 0.5s linear;
+                    }
+                    .disable {
+                        display: none;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                        color: transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .main-container-carousel-tres {
+        display: flex;
+        justify-content: center;
+        .main-carousel-opiniones {
+            width: 64rem;
+            justify-content: space-between;
+        }
+    }
+}

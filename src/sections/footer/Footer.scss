@@ -2,7 +2,7 @@
 
 
 .footer {
-    padding-top: 1.5rem;
+    padding-top: 2rem;
     background-color: $dark-white;
     .container-logo-footer {
         display: flex;
@@ -12,16 +12,17 @@
     }
     .container-contact-footer {
         margin: $margin-main-mobile;
-        height: 8rem;
+        height: 8.2rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
         .div-emergencias {
+            height: 4rem;
             width: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             .emergencias {
                 text-align: center;
@@ -30,6 +31,9 @@
                 letter-spacing: 0.4px;
                 color: $red;
                 font-weight: 700;
+            }
+            .telefono {
+                font-size: 24px;
             }
         }
         .social-media-logos {
@@ -43,16 +47,19 @@
     }
     .container-contact-data {
         margin: $margin-main-mobile;
-        height: 21rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: flex-start;
+        gap: 2rem;
         .contact-data {
             .p-contact-data {
-                @extend .text;
-                white-space: pre-line;
+                font-size: 16px;
+                letter-spacing: 0.4px;
                 line-height: 24px;
+                white-space: pre-line;
             }
             .p-bold-contact-data{
                 font-weight: 700;
@@ -96,11 +103,12 @@
             left: 4.5rem;
             top: 2.5rem;
             margin: $margin-main-desktop;
+            margin-bottom: 1rem;
         }
         .container-contact-footer {
             margin: $margin-main-desktop;
             width: 16rem;
-            height: 6.6rem;
+            height: 8rem;
             .social-media-logos {
                 display: flex;
                 justify-content: space-between;

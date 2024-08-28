@@ -106,7 +106,7 @@ export const homeBannerDesktop = [
     {
         imgData:img3D,
         btnName: 'Ver Video',
-        btnLink: 'quienes-somos'
+        btnLink: 'quiénes-somos'
     },
 ]
 export const nuestrosClientesData = [
@@ -128,5 +128,24 @@ export const nuestrosClientesData = [
     cliente16
 ]
 export const opinionesData = [
-    
+    {
+        owner: 'Rodolfo Nan Baíllo',
+        review: 'Excelente atención, muy buena predisposición del personal y eficientes en su trabajo. Por demás recomendable.',
+    },
+    {
+        owner: 'Marcelo Olivera',
+        review: 'Recomiendo ampliamente los servicios de seguridad de Vicar. He sido cliente durante más de 30 años y siempre he estado satisfecho con su servicio profesional y confiable.',
+    },
+    {
+        owner: 'Marcelo de León',
+        review: 'Excelente servicio!! Atención humana, rápida respuesta, por más empresas como Vicar seguridad!!',
+    },
+    {
+        owner: 'Jorge Ramos',
+        review: 'Seriedad y confiabilidad luego de varios años de contratar el servicio con la empresa',
+    },
+    {
+        owner: 'Cristian de León',
+        review: 'Una empresa responsable y que presta un servicio muy bueno.',
+    }
 ]

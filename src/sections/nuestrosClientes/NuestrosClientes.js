@@ -20,7 +20,7 @@ const NuestrosClientes = ({title}) => {
                 :
             isDesktop?
             // <Image images={nuestrosClientesData} imgSize={240}/>
-                <Slide images={nuestrosClientesData} speedSlide={3} slideNum={13} imgSize='240'/>
+                <Slide images={nuestrosClientesData} speedSlide={3} slideNum={13.3} imgSize='240'/>
                 :
                 <Slide images={nuestrosClientesData} speedSlide={3.5} slideNum={23} imgSize='240'/>
             }

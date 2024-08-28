@@ -31,7 +31,7 @@ const Card = ({ data }) => {
                             <p className='text-card'>{item.text}</p>: <></> }
                             <div key={'div'+index} className='disable-btn-card'>
                                 <Link to='cotizar' className='p-btn-card-cotizar' delay={200} smooth={true} duration={800} offset={-60}>
-                                cotizar sin costo
+                                Cotizar sin costo
                                 </Link>
                             </div>
                         </div>

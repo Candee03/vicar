@@ -7,7 +7,6 @@ import email from '../../img/footer/email.png'
 import phone from '../../img/footer/phone.png'
 import whatsapp from '../../img/footer/whatsapp.png'
 import map from '../../img/footer/map.png'
-import { Link } from 'react-scroll'
 
 
 const Footer = () => {
@@ -20,24 +19,24 @@ const Footer = () => {
             <div className='container-contact-footer'>
                 <div className='div-emergencias'>
                     <p className='emergencias'>Emergencias 24/7</p>
-                    <p className='emergencias'>Teléfono: 4266 4662</p>
+                    <p className='emergencias telefono'>Teléfono: 4266 4662</p>
                 </div>
                 <div className='social-media-logos'>
-                    <Link to={'home'}>
+                    <a target='_blank' rel="noreferrer" href='http://wa.me/59898310647'>
                         <img className='img-social-media' alt='' src={whatsapp}/>
-                    </Link>
-                    <Link to={'home'}>
+                    </a>
+                    <a target='_blank' rel="noreferrer" href='https://www.instagram.com/vicar_seguridad'>
                         <img className='img-social-media' alt='' src={instagram}/>
-                    </Link>
-                    <Link to={'home'}>
+                    </a>
+                    <a rel="noreferrer" href='tel:42664266'>
                         <img className='img-social-media' alt='' src={phone}/>
-                    </Link>
-                    <Link to={'home'}>
+                    </a>
+                    <a rel="noreferrer" href='mailto:atencionalcliente@vicar.com.uy'>
                         <img className='img-social-media' alt='' src={email}/>
-                    </Link>
-                    <Link to={'home'}>
+                    </a>
+                    <a target='_blank' rel="noreferrer" href='https://maps.app.goo.gl/VKULnuKBJKJnbdSy6'>
                         <img className='img-social-media' alt='' src={map}/>
-                    </Link>
+                    </a>
                 </div>
             </div>
             <div className='container-contact-data'>
@@ -58,7 +57,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='container-pol-priv'>
-                <p className='p-politica-de-privacidad'>Política de privacidad</p>
+                <a className='p-politica-de-privacidad' target='_blank' href='/politica_de_privacidad'>Política de privacidad</a>
             </div>
 
             <div className='container-credits-footer'>

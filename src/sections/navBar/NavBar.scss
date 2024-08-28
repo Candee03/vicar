@@ -46,7 +46,7 @@ header {
 }
 .nav-bar-bg {
     z-index: 2;
-    top: 350px;
+    top: 405px;
     height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -85,6 +85,10 @@ header {
                 a {
                     font-weight: 700;
                     color: $dark-red;
+                    padding: 0.5rem;
+                }
+                :hover {
+                    background-color: $transparent-red-hover-nav-bar;
                 }
             }
         }

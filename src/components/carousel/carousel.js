@@ -4,7 +4,6 @@ import Btn from '../botton/Btn';
 
 /**
  * 
- * @param {} props imgSize number
  * @param {} props timeOut number
  * @param {} props data array
  * @param {} props arrows boolean

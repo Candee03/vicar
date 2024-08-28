@@ -14,7 +14,7 @@ const CotizarSC = ({title}) => {
                     <div className='container-content-cotizar'>
                         <p className='p-cotizar'>Si lo prefieres:</p>
                         {/* //MODIFICAR */}
-                        <Btn innerText={'Cotizar por WhatsApp'} btnType={'Cotizar'} linkTo={''} />
+                        <Btn innerText={'Cotizar por WhatsApp'} btnType={'Cotizar'} src={'http://wa.me/59898310647'} />
                         <p className='p-cotizar'>O completa el formulario y te contactaremos:</p>
                         <Form/>
                     </div>
