@@ -1,10 +1,11 @@
 import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // STYLES
 import './App.scss';
-// COMPONENTS
+// PAGES
 import MainPage from './pages/MainPage';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import PolDePriv from './pages/PolDePriv';
+import Error from './pages/Error';
 
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<MainPage/>}/>
-        <Route path='/politica_de_privacidad' element={<PolDePriv/>}/>
+        <Route path='vicar.netlify.app/politica_de_privacidad' element={<PolDePriv/>}/>
+        <Route path='*' element={<Error/>} />
       </Routes>
     </BrowserRouter>
   );
