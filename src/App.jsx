@@ -13,7 +13,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<MainPage/>}/>
-        <Route path='vicar.netlify.app/politica_de_privacidad' element={<PolDePriv/>}/>
+        <Route path='/politica_de_privacidad' element={<PolDePriv/>}/>
         <Route path='*' element={<Error/>} />
       </Routes>
     </BrowserRouter>

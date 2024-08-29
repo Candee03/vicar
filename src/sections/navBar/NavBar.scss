@@ -21,7 +21,6 @@ header {
     }
 }
 .ul-nav-bar {
-    opacity: 1;
     transition: opacity 0.3s linear;
     position: absolute;
     z-index: 2;
@@ -32,12 +31,15 @@ header {
     flex-direction: column;
     align-items: center;
     background-color: $navBar;
-    opacity: 90%;
+    opacity: 95%;
     list-style: none;
     .li-nav-bar {
-        padding: 20px 0;
         cursor: pointer;
         a {
+            padding: 20px 0;
+            display: block;
+            width: 90vw;
+            text-align: center;
             @extend .text;
             font-weight: 700;
             color: $white;
@@ -85,10 +87,19 @@ header {
                 a {
                     font-weight: 700;
                     color: $dark-red;
-                    padding: 0.5rem;
-                }
-                :hover {
+                    padding: 1.7rem;
+                }:hover {
                     background-color: $transparent-red-hover-nav-bar;
+                }
+            }
+            .li-nav-bar-desktop-cotizar {
+                cursor: pointer;
+                a {
+                    font-weight: 700;
+                    color: $white;
+                    padding: 0.7rem 1.2rem;
+                    background-color: $red;
+                    border-radius: 12px;
                 }
             }
         }

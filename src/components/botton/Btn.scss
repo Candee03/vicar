@@ -19,7 +19,7 @@
             @extend .text-20;
             line-height: 20px;
         }
-    } :hover {
+    }:hover {
         transition: 0.3s;
         background-color: $dark-red;
     }
@@ -38,7 +38,7 @@
             font-weight: 700;
             @extend .text;
         }
-    } :hover {
+    }:hover {
         transition: 0.3s;
         background-color: $white;
         .text-btn-home {

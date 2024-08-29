@@ -8,11 +8,14 @@
     .leftArrow, .rightArrow {
         @extend .arrow-carousel;
     }
+    .leftArrow {
+        padding: 0 20px 0 0;
+    }
     .container-carousel {
         position: relative;
         overflow: hidden;
         .carousel {
-            height: 18rem;
+            height: 19rem;
             div {
                 position: relative;
                 display: flex;

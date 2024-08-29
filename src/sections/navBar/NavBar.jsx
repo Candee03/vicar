@@ -45,9 +45,9 @@ const Navbar = ({navList}) => {
                 <ul className='ul-nav-bar-desktop'>
                     {navList.map((li) => {
                         return (
-                            <li className='li-nav-bar-desktop'>
+                            <li className={li === 'Cotizar'? 'li-nav-bar-desktop-cotizar': 'li-nav-bar-desktop'}>
                                 <Link onClick={() => clickNav()} to={`${parse(li)}`} delay={200} smooth={true} duration={800} offset={-60}>
-                                    {li} 
+                                    {li}
                                 </Link>
                             </li>
                         )
