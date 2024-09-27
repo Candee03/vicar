@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './form.scss'
+import { DOMAIN } from '../../config/config';
 
 const Form = () => {
     const [formData, setFormData] = useState({
@@ -10,6 +11,7 @@ const Form = () => {
         message: '',
     });
     const [submitted, setSubmitted] = useState(false);
+    const [charge, setCharge] = useState(false);
     const [error, setError] = useState(false);
 
     const handleChange = (e) => {
@@ -18,8 +20,10 @@ const Form = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setError(false)
+        setCharge(true)
         //MODIFICAR
-        fetch(`http://localhost:5000/send-email`, {
+        fetch(`${DOMAIN}/send-email`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -28,6 +32,7 @@ const Form = () => {
         })
         .then((response) => {
             if (response.ok) {
+            setCharge(false)
             setSubmitted(true);
             setFormData({
                 name: '',
@@ -37,6 +42,7 @@ const Form = () => {
                 message: '',
             });
             } else {
+            setCharge(false)
             setError(true);
             }
         })
@@ -56,14 +62,21 @@ const Form = () => {
                     <input className='input-from' placeholder='E-mail' type="email" name="email" value={formData.email} onChange={handleChange} required />
                 </div>
                 <div className='div-input'>
-                    <input className='input-from' placeholder='Teléfono' type="tel" name="phone" value={formData.phone} onChange={handleChange} required />
+                    <input className='input-from' placeholder='Teléfono' type='number' name="phone" value={formData.phone} onChange={handleChange} required />
                 </div>
                 <div className='div-textarea'>
                     <textarea className='textarea-form' placeholder='Tu consuta' name="message" value={formData.message} onChange={handleChange} required></textarea>
                 </div>
                 {error && <p className='p-message-form'>¡Vaya! Hubo un error. Por favor, intenta de nuevo ⚠️</p>}
                 {submitted && <p className='p-message-form'>¡Gracias! Tu consulta ha sido enviada✅</p>}
+                {charge?
+                <div className='spinner-form'>
+                    <span className='txt-loader'>Aguarde un segundo...</span>
+                    <span className="loader"></span>
+                </div>
+                :
                 <button className='btn-submit' type="submit">Cotizar</button>
+                }
             </form>
         </div> 
     );
