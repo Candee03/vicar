@@ -22,7 +22,6 @@ const Form = () => {
         e.preventDefault();
         setError(false)
         setCharge(true)
-        //MODIFICAR
         fetch(`${DOMAIN}/send-email`, {
         method: 'POST',
         headers: {
@@ -46,7 +45,10 @@ const Form = () => {
             setError(true);
             }
         })
-        .catch(() => setError(true));
+        .catch(() => {
+            setError(true)
+            setCharge(false)
+        });
     };
 
     return (

@@ -14,12 +14,10 @@ const CV = () => {
                 <div className='container-content-cv'>
                     <p className='p-cv'>Si te gustaría formar parte de nuestro equipo, envíanos tu CV:</p>
                     <div className='container-email'>
-                        <p className='subtitle-cv'>Administrativos: </p>
-                        <a className='email-cv' href='mailto:priscilla@vicar.com.uy'>priscilla@vicar.com.uy</a>
+                        <a className='email-cv' href='mailto:priscilla@vicar.com.uy'>Administrativos</a>
                     </div>
                     <div className='container-email'>
-                        <p className='subtitle-cv'>Técnicos:</p>
-                        <a className='email-cv' href='mailto:jorge@vicar.com.uy'>jorge@vicar.com.uy</a>
+                        <a className='email-cv' href='mailto:jorge@vicar.com.uy'>Técnicos</a>
                     </div>
                 </div>
             </div>

@@ -16,11 +16,11 @@ import cliente6 from '../img/nuestros-clientes/cliente6.png'
 import cliente7 from '../img/nuestros-clientes/cliente7.png'
 import cliente8 from '../img/nuestros-clientes/cliente8.png'
 import cliente9 from '../img/nuestros-clientes/cliente9.png'
-import cliente10 from '../img/nuestros-clientes/cliente10.png'
+// import cliente10 from '../img/nuestros-clientes/cliente10.png'
 import cliente11 from '../img/nuestros-clientes/cliente11.png'
 import cliente12 from '../img/nuestros-clientes/cliente12.png'
-import cliente13 from '../img/nuestros-clientes/cliente13.png'
-import cliente14 from '../img/nuestros-clientes/cliente14.png'
+// import cliente13 from '../img/nuestros-clientes/cliente13.png'
+// import cliente14 from '../img/nuestros-clientes/cliente14.png'
 import cliente15 from '../img/nuestros-clientes/cliente15.png'
 import cliente16 from '../img/nuestros-clientes/cliente16.png'
 
@@ -119,33 +119,38 @@ export const nuestrosClientesData = [
     cliente7,
     cliente8,
     cliente9,
-    cliente10,
     cliente11,
     cliente12,
-    cliente13,
-    cliente14,
     cliente15,
     cliente16
 ]
 export const opinionesData = [
     {
-        owner: 'Rodolfo Nan Baíllo',
+        owner: 'Rodolfo N. B.',
         review: 'Excelente atención, muy buena predisposición del personal y eficientes en su trabajo. Por demás recomendable.',
     },
     {
-        owner: 'Marcelo Olivera',
+        owner: 'Marcelo O.',
         review: 'Recomiendo ampliamente los servicios de seguridad de Vicar. He sido cliente durante más de 30 años y siempre he estado satisfecho con su servicio profesional y confiable.',
     },
     {
-        owner: 'Marcelo de León',
-        review: 'Excelente servicio!! Atención humana, rápida respuesta, por más empresas como Vicar seguridad!!',
+        owner: 'Mirta Q.',
+        review: 'Quiero agradecer por la atención que nos brindaron! Y por la atención del equipo de técnicos! Como siempre muy correctos y amables!!! Muchas gracias por todo!!!',
     },
     {
-        owner: 'Jorge Ramos',
+        owner: 'Clara M.',
+        review: 'Queria agradecerles al equipo técnico de Vicar por el buen trabajo y buena predisposición. Pudieron resolver todo con inteligencia y ganas.',
+    },
+    {
+        owner: 'Marcelo D. L.',
+        review: 'Excelente servicio!!! Atención humana, rápida respuesta, por más empresas como Vicar seguridad!!!',
+    },
+    {
+        owner: 'Jorge R.',
         review: 'Seriedad y confiabilidad luego de varios años de contratar el servicio con la empresa',
     },
     {
-        owner: 'Cristian de León',
+        owner: 'Cristian D. L.',
         review: 'Una empresa responsable y que presta un servicio muy bueno.',
     }
 ]

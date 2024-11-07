@@ -19,7 +19,7 @@ const Footer = () => {
             <div className='container-contact-footer'>
                 <div className='div-emergencias'>
                     <p className='emergencias'>Emergencias 24/7</p>
-                    <p className='emergencias telefono'>Teléfono: 4266 4662</p>
+                    <p className='emergencias telefono'>Teléfono: 092588532</p>
                 </div>
                 <div className='social-media-logos'>
                     <a target='_blank' rel="noreferrer" href='http://wa.me/59898310647'>
@@ -28,7 +28,7 @@ const Footer = () => {
                     <a target='_blank' rel="noreferrer" href='https://www.instagram.com/vicar_seguridad'>
                         <img className='img-social-media' alt='' src={instagram}/>
                     </a>
-                    <a rel="noreferrer" href='tel:42664266'>
+                    <a rel="noreferrer" href='tel:092588532'>
                         <img className='img-social-media' alt='' src={phone}/>
                     </a>
                     <a rel="noreferrer" href='mailto:atencionalcliente@vicar.com.uy'>
@@ -43,13 +43,13 @@ const Footer = () => {
                 <div className='contact-data'>
                     <p className='p-bold-contact-data'>Atención al cliente:</p>
                     <p className='p-contact-data'>Teléfono: 4266 4266</p>
-                    <p className='p-contact-data'>WhatsApp: +598 98 310 647 </p>
-                    <p className='p-contact-data'>E-mail: atencionalcliente@vicar.com.uy</p>
+                    <p className='p-contact-data'>WhatsApp: <a target='_blank' rel="noreferrer" href='http://wa.me/59898310647'>+598 98 310 647</a></p>
+                    <p className='p-contact-data'>E-mail: <a rel="noreferrer" href='mailto:atencionalcliente@vicar.com.uy'>atencionalcliente@vicar.com.uy</a></p>
                 </div>
                 <div className='contact-data'>
                     <p className='p-bold-contact-data'>Cotizaciones:</p>
-                    <p className='p-contact-data'>WhatsApp: +598 98 310 647 </p>
-                    <p className='p-contact-data'>E-mail: wilson@vicar.com.uy</p>
+                    <p className='p-contact-data'>WhatsApp: <a target='_blank' rel="noreferrer" href='http://wa.me/59898310647'>+598 98 310 647</a></p>
+                    <p className='p-contact-data'>E-mail: <a rel="noreferrer" href='mailto:wilson@vicar.com.uy'>wilson@vicar.com.uy</a></p>
                 </div>
                 <div className='contact-data'>
                     <p className='p-bold-contact-data'>Dirección:</p>

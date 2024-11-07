@@ -16,13 +16,13 @@ const NuestrosClientes = ({title}) => {
         <div className='container-nuestrosClientes'>
             <Title title={title}/>
             {isMobile?
-                <Slide images={nuestrosClientesData} speedSlide={3.5} slideNum={48.2} imgSize='240'/>
+                <Slide images={nuestrosClientesData} speedSlide={3} slideNum={42} imgSize='240'/>
                 :
             isDesktop?
             // <Image images={nuestrosClientesData} imgSize={240}/>
-                <Slide images={nuestrosClientesData} speedSlide={3} slideNum={13.3} imgSize='240'/>
+                <Slide images={nuestrosClientesData} speedSlide={2.8} slideNum={13} imgSize='240'/>
                 :
-                <Slide images={nuestrosClientesData} speedSlide={3.5} slideNum={23} imgSize='240'/>
+                <Slide images={nuestrosClientesData} speedSlide={3} slideNum={20} imgSize='240'/>
             }
         </div>
     )
