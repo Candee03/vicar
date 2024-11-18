@@ -13,10 +13,18 @@
     }
 }
 
-@media  screen and (min-width: 500px) {
+@media  screen and (min-width: $tablet) {
     .container-check {
         .p-check {
-            white-space: pre-line;
+            white-space: normal;
+        }
+    }
+}
+@media  screen and (min-width: $desktop) {
+    .container-check {
+        width: 22rem;
+        .p-check {
+            white-space: normal;
         }
     }
 }

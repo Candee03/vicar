@@ -54,6 +54,7 @@ const Footer = () => {
                 <div className='contact-data'>
                     <p className='p-bold-contact-data'>Dirección:</p>
                     <p className='p-contact-data'>Melchor Maurente 835, San Carlos - Maldonado - Uruguay</p>
+                    <p className='p-contact-data'> Atención de Lunes a Sábados de 8-18 h</p>
                 </div>
             </div>
             <div className='container-pol-priv'>

@@ -10,11 +10,11 @@
         margin: $margin-main-mobile;
         .content {
             .img-app {
-                max-width: 26rem;
                 width: 90vw;
-                height: fit-content;
+                height: auto;
+                object-fit: contain;
             }
-            .container-check-component {
+            .container-check-and-subtitle {
                 display: flex;
                 flex-direction: column;
                 .subtitle-smartPanic {
@@ -22,6 +22,11 @@
                     font-weight: 700;
                     color: $black;
                     margin-top: 1.5rem;
+                }
+                .container-check-component {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
                 }
             }
         }
@@ -38,6 +43,18 @@
     pointer-events: none;
 }
 
+@media screen and (min-width: $tablet){
+    .img-bg {
+        .container-smartPanic {
+            .content {
+                .img-app {
+                    width: 26rem;
+                    height: fit-content;
+                }
+            }
+        }
+    }
+}
 @media screen and (min-width: $desktop){
     .img-bg {
         background-image: url('../../img/smartPanic/hexasBg-2.png');
@@ -47,10 +64,13 @@
                 display: flex;
                 flex-direction: row-reverse;
                 justify-content: space-between;
-                .container-check-component {
+                .img-app {
+                    width: 26rem;
+                }
+                .container-check-and-subtitle {
                     width: 65%;
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     flex-wrap: wrap;
                     gap: 1.5rem;
                 }
